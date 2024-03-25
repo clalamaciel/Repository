@@ -1,17 +1,17 @@
 import streamlit as st 
 import pandas as pd
 import numpy as np
-voc = pd.read_csv( https://docs.google.com/spreadsheets/d/e/2PACX-1vSeARXO3MT92XWpg2IwyQOQ8Wi2upeEkqJvNJz5i3bRqHdJIrTchGBBclVu-3Jd1ohYKM4IxecgV64I/pub?output=csv ')
-l = voc.shape[0]
-indices = np.random.choice(l, size=4, replace=False)
-j = np.random.choice(indices)
+voc=pd.read_csv( https://docs.google.com/spreadsheets/d/e/2PACX-1vSeARXO3MT92XWpg2IwyQOQ8Wi2upeEkqJvNJz5i3bRqHdJIrTchGBBclVu-3Jd1ohYKM4IxecgV64I/pub?output=csv ')
+l=voc.shape[0]
+indices=np.random.choice(l,size=4,replace=False)
+j=np.random.choice(indices)
 word_fr=voc['Définition'].values[j]
-st.write('Traduis: '+word_fr)
-def is_correct(i, j):
+st.write("Traduis:"+"+word_fr)
+def is_correct(i,j):
   if i==j:
-    st.write("Bien joué !")
+    st.write("Bien joué!")
   else:
-    st.write("Perdu !")
+    st.write("Perdu!")
 col1, col2 = st.columns(2) 
 with col1:
     for i in range(2):
