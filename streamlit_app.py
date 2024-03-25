@@ -9,7 +9,7 @@ word_chi=voc['Hanzi'].values[i]
 st.write(word_fr+"Hanzi"+word_chi)
 j=np.random.choice(indices)
 word_fr=voc["Définition"]
-st.write("Traduis:"+"+word_fr)
+st.write("Traduis:"+""+word_fr)
 def is_correct(i,j):
   if i==j:
     st.write("Bien joué!")
